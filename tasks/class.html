@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Personal Finance Manager</h1>
+    
+    <h2>Balance :</h2>
+
+    <form action="">
+        <input id="des" type="text" placeholder="Description">
+        <input id="amou" type="number" placeholder="Amount">
+
+        <select id="soures">
+            <option value="Income">Income</option>
+            <option value="gount">goout</option>
+        </select>
+
+
+        <button id="button">Add</button>
+        <h2 id="total"></h2>
+
+    </form>
+    
+
+    <script>
+
+        const btn = document.getElementById("button")
+    
+        let sum =0;
+
+        btn.addEventListener("click",()=>{
+            const title = document.getElementById("des").value;
+            //console.log(title);
+            const amount = Number(document.getElementById("amou").value);
+            //console.log(amount);
+            const category = document.getElementById("soures").value;
+            //console.log(category);
+            const total = document.getElementById("total").value;
+            //console.log(total);
+            const deleteBtn = document.createElement("button");
+            deleteBtn.innerText = "delete";
+
+
+            deleteBtn.addEventListener("click", () => {
+                sum -= amount;
+                totalElement.innerText = sum;
+                document.body.removeChild(para);
+                update();
+                
+            });
+
+
+            sum += amount;
+            const para = document.createElement("p");
+            totalElement.innerText = sum;
+
+
+            para.innerText = `${title} ${amount} ${category};`
+            para.appendChild(deleteBtn);
+            document.body.appendChild(para);
+            update();
+
+        })
+
+        function update() {
+            const totalAmount = obj.income + obj.Expenses;
+            const incomePercent = (obj.income / totalAmount) * 100;
+            const expensesPercent = (obj.Expenses / totalAmount) * 100;
+        }
+
+
+
+       
+
+            
+            
+            
+            
+            
+
+
+
+
+        
+
+        
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        /*Task 1: Using concat
+        Objective: Merge two or more arrays.
+        Task: Create two arrays, one with your favorite sports and one with your favorite hobbies. Use the concat method to merge them into a single array.
+        Expected Output: Display the merged array.
+        
+        */
+        arr1 = ["chess","circket","football"]
+        
+        arr2 = ["travaling","reading books","playing games"]
+        
+        
+        b = arr1.concat(arr2)
+        
+        console.log(b)
+        
+        
+        /*Using splice
+        Objective: Modify an array by adding, removing, or replacing elements.
+        Task: Create an array of numbers from 1 to 10. Use the splice method to remove the numbers 4, 5, and 6, and replace them with the numbers 40, 50, and 60.
+        Expected Output: Display the array before and after the splice operation.
+        */
+        
+        arr = ["1","2","3","4","5","6","7","8","9","10"]
+        
+        arr.splice(2,3,"40","50","60")
+        console.log(arr)
+        
+        /*Task 3: Using slice
+        Objective: Extract a portion of an array without modifying the original array.
+        Task: Create an array of the days of the week. Use the slice method to create a new array that contains only the weekdays.
+        Expected Output: Display the original array and the new array.*/
+        
+        arr3 = ["Monday","Tuesday","wendenday","Thusday","Friday","saturday","sunday"]
+        b = arr3.slice(0,5)
+        console.log(b)
+        
+        
+        // Using sort method sort the elements:
+        
+        arr4 = [7,6,5,4,3,2,1]
+        console.log(arr4.sort().join(" "))
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+    <script>
+
+        //Number Classification: positive or negative or zero;
+
+        let a = +prompt("Enter a number :");
+
+        if(a>0){
+
+            console.log("it is positive number");
+            
+        }
+
+        else if(a<0){
+            console.log("it is a negative number");
+            
+        }
+
+        else if(a==0){
+
+            console.log("it is zero");
+            
+        }
+
+        else{
+
+            alert("enter only numbers")
+        }
+
+
+        // Divisibility Check:
+
+        let number = +prompt("Enter a number:");
+
+        if(number%5==0 && number%11==0){
+
+            console.log("divisible by 5 and 11");
+            
+        }
+
+        else{
+            console.log("not divisible");
+            
+        }
+
+        // Character Type Checker: a,e,i,o,u :
+
+        let char = prompt("Enter a single character");
+
+        if(char == "a"){
+
+            console.log("it is vowel");
+            
+        }
+
+
+        else if(char == "e"){
+            console.log("it is a vowel");
+            
+        }
+
+        else if(char == "i"){
+            console.log("it is a vowel");
+            
+        }
+
+        else if(char == "o"){
+            console.log("it is a vowel");
+            
+        }
+
+        else if(char == "u"){
+            console.log("it is a vowel");
+            
+        }
+
+        
+
+
+        else{
+
+            console.log("not a vowel");
+            
+        }
+
+
+        // Simple Calculator:
+
+        let x = +prompt("Enter first number :");
+
+        let y = +prompt("Enter second number :");
+
+        let z = prompt("Enter a oparator");
+
+        if(z == "+"){
+
+            console.log(x+y);
+            
+        }
+
+        else if(z == "-"){
+
+            console.log(x-y);
+            
+        }
+
+        else if(z == "*"){
+
+            console.log(x * y);
+            
+        }
+
+        else if(z == "%"){
+
+            console.log(x % y);
+            
+        }
+
+        else if(z == "/"){
+
+            console.log(x / y);
+            
+        }
+
+        else{
+            console.log("Invalid");
+            
+        }
+
+        // Password Strength Checker :
+
+        let password = prompt("Enter the password :");
+
+        let stringlength = password.length;
+
+        console.log(stringlength);
+
+        if(stringlength<6){
+
+            console.log("weak");
+            
+
+        }
+
+        else if(stringlength>=6 && stringlength<=10){
+
+            console.log("Moderate");
+            
+        }
+
+        else if(stringlength>10){
+
+            console.log("strong");
+            
+
+        }
+
+        else{
+
+            console.log("invalid");
+            
+        }
+
+
+        // Time of Day Greeter:
+
+        let time = +prompt("Enter time :");
+
+        if(time>=0 && time<=11){
+
+            console.log("Good morning");
+            
+        }
+
+        else if(time>=12 && time<=17){
+
+            console.log("Good Afternoon");
+            
+        }
+
+        else if(time>=18 && time<=23){
+
+            console.log("Good Evening");
+            
+        }
+
+        else{
+
+            console.log("invalid");
+            
+        }
+
+        // Isosceles trainagle :
+
+        
+        
+    
+
+
+
+
+
+        
+        
+
+
+
+
+        
+    </script>
+</body>
+</html>

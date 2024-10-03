@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+
+    
+
+
+        // program 1;
+        let day = prompt("Enter a spl day");
+
+        if(day.toLocaleLowerCase == "monday"){
+
+        console.log("Start your week strong!");
+            
+        }
+
+        else if(day.toLocaleLowerCase() == "tuesday"){
+
+        console.log("“Keep going!”");
+        }
+
+        else if(day.toLocaleLowerCase() == "Wednesday"){
+
+            console.log(day == "“Halfway there!”");
+            
+        }
+
+        else if(day.toLocaleLowerCase() == "Thursday"){
+
+            console.log(day == "“Almost the weekend!”");
+            
+        }
+
+        else if(day.toLocaleLowerCase() == "Friday"){
+
+            console.log(day == "“Happy Friday!”");
+            
+        }
+
+        else if(day.toLocaleLowerCase() == "saturday"  && day == "sunday"){
+
+            console.log("“Enjoy your weekend!”");
+            
+        }
+        else{
+            console.log("enter valid day");
+            
+        }
+
+
+
+        // program no 2:
+
+        let color = prompt("Enter a proper light");
+
+        if(color.toLocaleLowerCase() == "red"){
+
+            console.log("“Stop”");
+            
+        }
+
+        else if(color.toLocaleLowerCase() == "yellow"){
+
+            console.log("“Get Ready”");
+            
+        }
+
+        else if(color.toLocaleLowerCase() == "green"){
+
+            console.log("“Go”");
+            
+        }
+
+        else{
+            console.log("enter valid words");
+            
+        }
+
+
+        //program 3
+
+
+        let amountstr = prompt("Enter a total amount");
+
+        let amount = parseFloat(amountstr.replace('$','')) ;
+
+        if(amount<=50){
+
+            console.log("No discount");
+        }
+
+        else if(amount>50 && amount<=100){
+
+            console.log("“5% discount”");
+            
+        }
+
+        else if(amount>=101 && amount<=200){
+            console.log("“10% discount”");
+            
+        }
+
+        else{
+            
+            console.log("“15% discount”");
+            
+        }
+
+
+        //program 4
+
+        let dish = prompt("Enter a dish");
+
+        switch(dish)
+        {
+
+            case "biriyani":{
+
+                console.log("price is 180/-");
+                break;
+                
+            }
+
+            case "shawarma":{
+
+                console.log("price is 120/-");
+                break;
+                
+            }
+
+            case "Fried rice":{
+
+                console.log("price is 100/-");
+                break;
+                
+            }
+
+            case "veg pula":{
+
+                console.log("price is 80/-");
+                break;
+                
+            }
+
+            default:console.log("Enter valid dish");
+            
+        }
+
+
+        //simple calu:
+
+        debugger;
+
+        let x = +prompt("Enter first number");
+
+        let y = +prompt("Enter second number");
+
+        let z = prompt("Enter oparation");
+
+
+
+        switch(z){
+
+            case "+":{
+
+                console.log(x+y);
+                break;
+                
+
+            }
+
+            case "-":{
+
+                console.log(x-y);
+                break;
+                
+            }
+
+            case "*":{
+
+                console.log(x*y);
+                break;
+                
+            }
+
+            case "%":{
+
+                console.log(x%y);
+                break;
+                
+            }
+
+            default:console.log("Enter a valid oparetion")
+                
+                
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

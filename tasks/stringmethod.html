@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        console.log(document);
+        
+
+
+        // var str = prompt("enter a string");
+        var b = str.toUpperCase()
+        console.log(b);
+        
+        
+        
+        // var str1 = prompt("enter a string")
+        var c = str.toLowerCase()
+        console.log(c);
+
+        var str1 = "vineeth";
+        var count = "";
+
+        for(i=0;i<str.length;i++){
+            count = str[i] + count;
+        }
+        console.log(count);
+
+
+        var str = "vineeth";
+        
+        count = "";
+        
+        for(i=0;i<str.length;i++){
+            count = str[i] + count 
+        }
+        console.log(count)
+
+        // revese a string using string split:
+
+        var str = "vine-eth";
+        console.log(str.split("").reverse().join())
+
+
+        var str = "vineeth";
+        
+        var a = str.split("");
+        var array = ["a","e","i","o","u"];
+        
+        var vowels = a.filter(b => array.includes(b))
+        
+        console.log(vowels)
+
+
+        
+
+        
+    </script>
+</body>
+</html>

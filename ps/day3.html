@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //fib series
+        num =14;
+        
+        n1 = 0;
+        n2 = 1;
+        
+        for(i=1;i<num;i++){
+            console.log(n1);
+            n3 = n1+n2; // 0 + 1 = 1
+            n1 = n2;
+            n2 = n3;
+        }
+
+
+        // factorial of uniqe number in a string
+        num = '3354547';
+        
+        s='';
+        
+        for(j of num){
+            if(!s.includes(j))
+            s = s + j;
+        }
+        console.log(s)
+        
+        for(a of s){
+            let fac = 1;   // every time  reset the value like every itaration
+            console.log(a)
+            let digit = Number(a)
+            for(i=1;i<=digit;i++){
+                fac = fac * i;
+            }
+        console.log(`Factorial of ${digit}: ${fac}`);
+        }
+
+
+        
+            
+            
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // find the duplicate and uniques numbers given string...
+        num = '5567454'
+        s = '';  // 5674
+        uni = '';
+        dup = '';
+        for(i of num){
+            if(!s.includes(i))
+            s = s + i
+        }
+        console.log(s)
+        
+        for(a of s){
+            c=0;
+            for(b of num){
+                
+                if(a==b)
+                c=c+1;
+            }
+        console.log(Number(c))
+        
+        if(c==1){
+            uni = uni + a;
+        }
+        else{
+            dup = dup + a;
+        }
+        }
+        console.log("duplicate are :" + dup) // 5 4
+        console.log("Uniques are :" + uni) // 6 7
+
+
+
+
+        // print duplicates and unique numbers;
+        num = '226455';
+        s = '';
+        uni = "";
+        dup = "";
+        
+        for(i of num){
+            if(!s.includes(i))
+            s = s + i
+        }
+        console.log(s) 
+        
+        for(a of s){
+            c = 0;
+            for(b of num){
+                
+                if(a==b)
+                c = c + 1;
+            }
+            console.log(a + "=>" + c)
+            
+            if(c==1){
+                uni = uni + a + " ";
+            }
+            else{
+                dup = dup + a + " ";
+            }
+        }
+            console.log("unique numbers " +uni+ " ")
+            console.log("duplicates numbers " + dup + " ")
+        
+    </script>
+</body>
+</html>

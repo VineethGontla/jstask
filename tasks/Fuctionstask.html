@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        //Create a function that takes a name as an argument and returns a greeting message.
+
+        function hello(a = "dear"){
+            console.log("Hello " + a)
+        }
+        hello("vineeth")
+
+
+
+
+        // sum of numbers using fuction
+
+        // Create a function that takes two numbers as arguments and returns their sum
+        
+        function sum(a,b){
+            console.log(a + b)
+        }
+        sum(10,20)
+
+
+
+
+        // sum of numbers using fuction
+
+        // Create a function that takes a number as an argument and returns its square.
+        
+        function square(a){
+            console.log(a * a)
+        }
+        square(6)
+
+
+
+        // average using for loop
+        // Create a function that takes an array of numbers as an argument and returns the average.
+        
+        var num = "9876"
+        sum = 0;
+        
+        for(i =0;i<num.length;i++){
+            sum = sum + Number(num[i])
+            
+            
+        }
+            console.log(sum)
+        
+        var res = sum / num.length
+        
+            console.log(res)
+
+        
+
+        // average: using functions
+        // Create a function that takes an array of numbers as an argument and returns the average.
+        
+        function calculateSum(num) {
+            let sum = 0;
+            
+            for(let i = 0; i < num.length; i++) {
+                sum += Number(num[i]);
+            }
+            
+            return sum;
+        }
+        
+        function calculateAverage(sum, length) {
+            return sum / length;
+        }
+        
+        let num = "9876";
+        let sum = calculateSum(num);
+        console.log("Sum:", sum);
+        
+        let average = calculateAverage(sum, num.length);
+        console.log("Average:", average);
+
+
+
+
+        // Vowels Function
+
+       //Scenario: Create a function that takes a string as an argument and returns weather the strings contains vowels or not .
+
+       function isVowel(char) {
+           return "aeiouAEIOU".includes(char);
+       }
+       
+       function printVowels(str) {
+           for (let i = 0; i < str.length; i++) {
+               if (isVowel(str[i])) {
+                   console.log(str[i]);
+               }
+           }
+       }
+       
+       
+       var str = "vikas";
+       printVowels(str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // In string find the ovews
+        
+        var name = "vineeth"
+        
+        for(n of name){
+            if("aeiouAEIOU".includes(n)){
+                console.log(n)
+                
+                
+            }
+            
+        }
+
+        // hi
+        
+        var str = "vikas"
+        for(i=0;i<str.length;i++){
+            if("aeiouAEIOU".includes(str[i]))
+            console.log(str[i])
+        }
+
+        // usin for of and logic are:
+        
+        name = "vineeth"
+        count = "";
+        for(n of name){
+            if(n =="a" || n == "e" || n == "i" || n == "o" || n == "u" ||
+               n == "A"|| n == "E" || n == "I" || n == "O" || n == "U"  ){
+                   
+               count = count + n;
+               }
+            
+        }
+        console.log(count)
+                    
+
+
+    </script>
+</body>
+</html>

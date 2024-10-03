@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .added{
+            background-color: aqua;
+            color: wheat;
+            font-size: xx-large;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="el1" title="hira">vineeth</div>
+    <div class="el2" title="vikas">vineeth</div>
+    <div class="el3">vineeth</div>
+    <div class="el4">vineeth</div> -->
+
+
+    <div><h2>Sai vineeth</h2></div>
+
+    <button onclick="sun()">Add styles</button>
+    <!-- <button onclick="fun()">Remove styles</button>    // remove button --> 
+    
+
+    <script>
+
+        var count = true;                            
+        function sun(){
+            
+            var x = document.querySelector("div");
+            x.classList.toggle("added");    // add aterbutie add the styles. // add, remove,toggle,and if else :using this we can perform a on click.
+
+            if(count){
+
+                x.classList.add("added");
+                count = false;
+            }
+
+
+            else{
+                x.classList.remove("added")      // remove attribute it remove the styles.
+                count = true;
+            }
+            console.log(x);
+           
+            
+        }
+
+        // function fun(){
+
+        //     var y = document.querySelector("div");
+        //     y.classList.remove("added") 
+        // }
+
+
+
+
+
+
+
+
+
+        // var r = document.getElementsByClassName("el1")[0];    // apply style by using title attribute
+        // var b = r.getAttribute("title");
+
+        // if(b=="hira"){
+        //     r.style.background = "blue";
+
+        // }
+        // console.log(b); 
+
+        // var x = document.getElementsByClassName("el2")[0];
+        // var y = x.getAttribute("title");
+        // if(y =="vikas"){
+        //     x.style.fontSize = "40px"
+        // }
+        // console.log(y);
+
+
+
+
+
+
+        // function fun(x){
+        //     var x = document.getElementsByClassName(x)[0];
+        //     x.setAttribute("class","added");                // style apply by using class name 
+            
+        //     console.log(x);
+            
+        // }
+        // fun("el4");
+
+
+
+
+
+
+
+        // var d = document.createElement("h2");
+        // d.innerText = "vineeth";
+        // d.setAttribute("class","added");
+
+
+
+        // document.body.appendChild(d);
+        // console.log(d); 
+        
+
+
+
+
+        // var c = document.createElement("img");       //  attribute like image,scr,passwaord,placehplder
+        // c.setAttribute("src","house2.jpg");
+        // document.body.appendChild(c);
+        
+
+        // var a = document.createElement("form");
+        // var b = document.createElement("input");
+        // b.setAttribute("type","password");
+        // b.setAttribute("placeholder","password")
+        
+
+        // a.appendChild(b);
+
+        // document.body.appendChild(a);
+
+        // console.log(a);
+        
+
+        
+        
+
+        
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+        
+        
+        
+
+    </script>
+</body>
+</html>

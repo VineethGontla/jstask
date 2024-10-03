@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="row"></div>
+
+    <script>
+
+        var data = JSON.parse(localStorage.getItem("arr"))
+        console.log(data);
+
+
+
+        var newarray = data.map((val)=>{
+                
+                var parent = document.querySelector(".row")
+
+
+                var main = document.createElement("div");
+                var child1 = document.createElement("img");
+                var child2 = document.createElement("div");
+                var child3 = document.createElement("div");
+                var child4 = document.createElement("div");
+
+
+                main.style.border = "1px solid black";
+                main.setAttribute("class","hi")
+        
+                child1.setAttribute("src",val.image);
+                child1.style.height = "50px";
+                child1.style.height = "50px"
+                child2.innerHTML = "<b>id :</b>" + val.id;
+                child3.innerHTML = "<b>Title :</b>" + val.title;
+                child4.innerHTML = "<b>description : </b>" + val.description;
+
+
+                btn = document.createElement("button")
+                btn.innerHTML =  "Remove";
+
+                btn1 = document.createElement("button");
+                btn1.innerHTML = "back";
+
+                btn1.addEventListener("click",()=>{
+
+                    window.open("finalapi.html","_self")
+
+                })
+
+                
+
+                btn.addEventListener("click",()=>{
+        
+                    main.style.display = "none"
+        
+                })
+
+                main.append(child1,child2,child3,child4,btn,btn1)
+                parent.appendChild(main)
+                
+                //console.log(main);
+                console.log(parent);
+                
+                console.log(val)
+
+
+        })
+
+
+    
+
+        
+
+    </script>
+    
+</body>
+</html>

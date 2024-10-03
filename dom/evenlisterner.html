@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .added{
+            background-color: red;
+            font-size: xx-large;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <h2>Sai vineeth</h2>
+    </div>
+
+    <button>click me</button>
+
+    <script>
+
+        var bts = document.querySelector("button");
+        bts.addEventListener("click",fun)  //(even like click or doble click or etc,callback)
+
+        console.log(bts);
+
+        function fun(){
+            var a = document.querySelector("h2")
+            a.classList.add("added")
+        }
+        bts.addEventListener("dblclick",function(){
+
+            var a = document.querySelector("h2");
+            a.style.backgroundColor = "black";
+            
+
+
+        })
+        
+        
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

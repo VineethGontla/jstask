@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .added{
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div>
+        <h2>sai vineeth</h2>
+    </div>
+
+    <button onclick="sun()">toggle</button>
+
+
+    <script>
+        function sun(){                                                     // program 1
+            var a = document.getElementsByTagName("h2")[0]
+            a.classList.toggle("added");
+            console.log(a);
+        }
+        
+
+            
+    </script>
+</body>
+</html>

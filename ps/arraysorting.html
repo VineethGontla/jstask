@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        // sorting 
+
+        arr = [202,203,210,2,55,2020]
+        
+        for(i=0;i<arr.length;i++){
+            for(j=i+1;j<arr.length;j++){
+                
+                if(arr[i]<arr[j]){
+                    
+                    temp = arr[i]
+                    arr[i] = arr[j]
+                    arr[j] = temp
+                }
+            }
+        }
+        console.log(arr)
+
+        //output : [ 2020, 210, 203, 202, 55, 2 ]
+
+        // sorting smaller to bigger
+
+        arr = [5,2,3,7,202]
+
+        for(i=0;i<arr.length;i++){
+            
+            for(j=i+1;j<arr.length;j++){
+                
+            console.log(arr[i],arr[j])
+            
+            if(arr[j]<arr[i]){
+                temp = arr[i]
+                arr[i] = arr[j]
+                arr[j] = temp
+            }
+        }
+        }
+        console.log(arr)
+        
+        /* output : 5 2
+        2 3
+        2 7
+        2 202
+        5 3
+        3 7
+        3 202
+        5 7
+        5 202
+        7 202
+        output : [ 2, 3, 5, 7, 202 ]*/
+            
+
+
+
+
+    </script>
+</body>
+</html>

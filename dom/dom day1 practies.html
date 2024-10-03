@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <h4 id="user">vineeth</h4> 
+
+    <h3 class="hi">one</h3>
+    <h3 class="hi">two</h3>
+    <h3 class="hi">three</h3>
+
+    <h1>vikas1</h1>
+    <h1>vikas2</h1>
+    <h1>vikas3</h1>
+
+    <p class="p">hi world</p>
+    <p class="p">hi word</p>
+
+    <div>sandeep</div>
+    <div>sandeep</div>
+    <div>sandeep</div>
+    <div>sandeep</div>
+    <div>sandeep</div>
+    <div>sandeep</div>
+    <div>sandeep</div>
+    <div>sandeep</div>
+    <div>sandeep</div>
+    <div>sandeep</div>
+
+
+
+
+    <script>
+
+        console.log(document)
+
+        var a = document.getElementById("user")  
+        console.log(a);
+        
+        
+
+        var b = document.getElementsByClassName("hi")
+        var f = b[1].innerText
+        console.log(f);
+        console.log(b)
+        
+        
+
+        var c = document.getElementsByTagName("h1");
+        console.log(c);
+
+        for(i=0;i<c.length;i++){
+            console.log(c[i]);
+        }
+
+        var d = document.querySelectorAll("hi")
+        for(i=0;i<d.length;i++){
+            console.log(d[i]);
+            
+        }
+
+        var x = document.getElementsByClassName("p")
+        console.log(x);
+        
+        var z = x[0].innerText = "hi vineeth"
+
+        console.log(z);
+
+    // 1st of the class 
+    
+    var v = document.getElementsByTagName("div")
+        
+        var arr2 = ["v","R","T","Y","U","J","H","D","W","G"]
+        var arr = [1,2,3,4,5,6,7,8,9,1]
+
+        for(i=0;i<v.length;i++){
+            
+            console.log(v[i].innerText += "mahesh" + arr[i] + arr2[i]);
+
+        }
+
+    
+
+        // 2nd part of class is create a elemnt and style the element and the change the element content...
+        
+        // 2nd part see in resume1.html
+        
+            
+            
+        
+        
+
+        
+
+
+
+        
+        
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            display: grid;
+            grid-template-columns: auto auto;
+            
+            border: 2px solid red;
+        }
+        .hi{
+
+            padding: 60px;
+        }
+        .bye{
+            padding: 20px;
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="bye">
+        <button onclick="addtocard()">
+            wishlist
+
+        </button>
+    </div>
+
+    <div class="row"></div>
+
+
+    
+
+    <script>
+
+        async function api(){
+
+            var res = await fetch("https://fakestoreapi.com/products")
+
+            var apidata = await res.json();
+
+            arr1 = []
+          
+            
+            var newarray = apidata.map((val)=>{
+                
+                var parent = document.querySelector(".row")
+                var main = document.createElement("div");
+                var child1 = document.createElement("img");
+                var child2 = document.createElement("div");
+                var child3 = document.createElement("div");
+                var child4 = document.createElement("div");
+
+
+                main.style.border = "1px solid black";
+                main.setAttribute("class","hi")
+        
+                child1.setAttribute("src",val.image);
+                child1.style.height = "50px";
+                child1.style.height = "50px"
+                child2.innerHTML = "<b>id :</b>" + val.id;
+                child3.innerHTML = "<b>Title :</b>" + val.title
+                child4.innerHTML = "<b>description : </b>" + val.description;
+
+                var btn = document.createElement("button")
+                btn.innerHTML = "Add";
+                
+                btn.addEventListener("click",function(){
+                    //main.style.display = "none";
+                    console.log(val);
+                    arr1.push(val)
+                    console.log(arr1);
+                    
+                    localStorage.setItem("arr",JSON.stringify(arr1))
+                    //window.open("final1.html")
+                    
+                    
+                })
+
+                
+                //document.body.appendChild(main)
+                main.append(child1,child2,child3,child4,btn)
+                parent.appendChild(main)
+                
+                //console.log(main);
+                
+                console.log(parent);
+                
+                console.log(val)
+            })
+            
+        }
+        api()
+                
+        function addtocard(){
+            window.open("final1.html","_self")
+        }
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
+        
+        
+        
+        
+        
+
+
+    </script>
+</body>
+</html>

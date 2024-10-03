@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // 1. reverse a string:
+
+        var a="hello";
+        
+        var count="";
+        
+        for(var i=0;i<a.length;i++){
+            
+            count=a[i]+count
+        }
+        
+        console.log(count)
+
+        // 2. find a even numbers in an array:
+        
+        var array =[22,54,55,65,77,86]
+        
+        for(i in array){
+            if(array[i]%2==0){
+                console.log(array[i]);
+            }
+        }
+
+    </script>
+</body>
+</html>

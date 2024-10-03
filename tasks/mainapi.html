@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+    <script>
+
+        async function apicall(){
+
+            var res = await fetch("https://fakestoreapi.com/products")
+
+            var apidata = await res.json();
+
+            
+            let arrmap = apidata.map((val)=>{
+                
+                var parent = document.createElement("div")
+                var child1 = document.createElement("div")
+                var child2 = document.createElement("img")
+                child2.setAttribute("src",val.image)
+                child2.style.height="50px";
+                child2.style.width= "50px";
+                
+
+                console.log(child1);
+                console.log(child2);
+                
+
+
+                child1.innerHTML = "<b>id</b>" + val.id
+
+
+                parent.append(child1)
+                child1.append(child2)
+
+
+                document.body.append(child1)
+                document.body.appendChild(child2)
+                
+            })
+            
+            
+
+        }
+        apicall()
+
+
+
+    </script>
+</body>
+</html>

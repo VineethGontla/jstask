@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .added{
+            /* background-color: aqua;
+            font-size: x-large; */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+   <div>vineeth</div>
+
+   <button onclick="fun()">submit</button>
+
+
+
+
+    <script>
+        console.log(document)
+
+        function fun(){
+            var a = document.getElementsByTagName("div")[0];
+            a.classList.toggle("added");
+
+
+            console.log(a);
+        }
+        
+
+    
+        // a[0].innerHTML = "<u>vineeth1</u>"
+        // a[1].innerText = "vikas"
+        
+    </script>
+
+
+</body>
+</html>

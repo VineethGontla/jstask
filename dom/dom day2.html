@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #name{
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h4 id="name">Vineeth</h4>
+
+
+    <p class="ls">Teja</p>
+    <p class="ls">Teja</p>
+    <p class="ls">Teja</p>
+    <p class="ls">Teja</p>
+    <p class="ls">Teja</p>
+    <p class="ls">Teja</p>
+    <p class="ls">Teja</p>
+    <p class="ls">Teja</p>
+    <p class="ls">Teja</p>
+
+
+    <div class="hi">vin</div>
+
+    
+
+
+
+
+    
+
+
+    
+
+    
+
+
+
+    <script>
+        console.log(document);
+
+        var a = document.getElementById("name");
+        a.style.background = "red";
+        a.style.fontSize="60px";
+       
+        console.log(a);
+        
+
+
+        var b = document.getElementsByClassName("ls");
+        for(i=0;i<b.length;i++){
+           console.log(b[i].innerText = "vineeth");
+        
+        }
+
+        var c = document.createElement("p");
+        c.innerText="bye"
+        console.log(c);
+    
+
+        var d = document.createElement("div")
+        d.innerText="hi";
+        console.log(d);
+        d.appendChild(c);
+
+
+        var f = document.createElement("h3")
+        f.innerText = "sai";
+       
+        document.body.appendChild(f);
+        console.log(f);
+
+        var x = document.getElementsByClassName("hi")
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
+        
+        
+        
+
+    
+        
+
+
+
+
+
+
+
+    
+
+        
+        
+
+
+
+        
+        
+        
+        
+        
+
+        
+
+    </script>
+</body>
+</html>

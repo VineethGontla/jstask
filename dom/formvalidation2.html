@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bye{
+            display: none;
+        }
+        .hi{
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <input type="text" name="password" placeholder="pass1" id="pas1">
+        <input type="text" name="passwaord" placeholder="pass2" id="pas2"> <br>
+        <span class="bye" style="color: red;">password are not matched</span> <br>
+        <input type="submit" value="button">
+    </form>
+
+
+    <form class="form2" action="">
+        <input class="in" type="text" name="name" placeholder="name"> <br>
+        <span class="hi">Text filed is empty</span> <br>
+        <input type="submit" value="button"> 
+    </form>
+
+    <script>
+
+        var a = document.querySelector("form");
+        console.log(a);
+
+        a.addEventListener("submit",function(event){
+            event.preventDefault()
+            var b = document.querySelector("#pas1");
+            console.log(b,b.value);
+
+            var c = document.querySelector("#pas2");
+            console.log(c,c.value);
+
+            if(b.value == c.value){
+                console.log("password is matched");
+                g = document.querySelector(".bye");
+                g.style.display = "none";
+                
+            }
+            else{
+                console.log("password does not mathced");
+                var d = document.querySelector(".bye")
+                console.log(d);
+                d.style.display= "block"
+            }
+                
+        })
+
+
+        
+        
+        // empty text
+        var form = document.querySelector(".form2");
+        console.log(form);
+
+        form.addEventListener("submit",function(event){
+            event.preventDefault();
+
+            var x = document.querySelector(".in")
+            console.log(x.value);
+            
+            if(x.value == ""){
+                var y = document.querySelector(".hi")
+                console.log(y);
+                y.style.display = "block";
+                
+                
+            }
+            else{
+                var z = document.querySelector(".hi")
+                z.style.display = "none"
+
+            }
+
+        })
+                
+
+          
+
+            
+
+
+
+                
+            
+            
+            
+            
+
+
+        
+
+    </script>
+</body>
+</html>

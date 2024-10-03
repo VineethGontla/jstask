@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+   
+
+    <script>
+        console.log(document);
+        
+        
+
+        header1 = document.createElement("h1")
+        header1.innerText = "Gontla Vineeth"
+        header1.style.color = "red"
+        
+        header1.style.textAlign = "center"
+        console.log(header1);
+        document.body.appendChild(header1);
+        
+        
+
+        
+        
+        var about = document.createElement("h3")
+        about.innerText = "About :"
+        about.style.textDecoration  = "underline";
+        about.style.paddingLeft = "30px"
+        console.log(about);
+        document.body.appendChild(about);
+
+
+        var content1 = document.createElement("p")
+        content1.innerText = "As a proficient web developer specializing in Python and MySQL, I excel in crafting static websites, boasting a solid grasp of HTML, CSS. Moreover, I leverage my skills in Python and MySQL to engineer dynamic, database-driven web applications."
+
+        content1.style.paddingLeft = "30px"
+        console.log(content1);
+
+        document.body.appendChild(content1);
+
+        var skills = document.createElement("h3")
+        skills.innerText = "Skills :"
+        skills.style.paddingLeft = "30px";
+        skills.style.textDecoration  = "underline"
+        console.log(skills);
+        document.body.appendChild(skills);
+
+
+        var ul = document.createElement("ul")
+        var li1 = document.createElement("li")
+        var li2 = document.createElement("li")
+        var li3 = document.createElement("li")
+        var li4 = document.createElement("li")
+        li1.innerText = "HTML"
+        li2.innerText = "CSS"
+        li3.innerText = "Javascript"
+        li4.innerText = "React"
+        ul.appendChild(li1)
+        ul.appendChild(li2)
+        ul.appendChild(li3)
+        ul.appendChild(li4)
+
+        document.body.appendChild(ul)
+
+
+        console.log(ul);
+
+
+        var pro = document.createElement("h3")
+        
+        pro.innerText ="Project :"
+        pro.style.paddingLeft = "30px"
+        pro.style.textDecoration  = "underline";
+        console.log(pro)
+        
+        
+        document.body.appendChild(pro)
+        
+        var des = document.createElement("h4")
+        des.innerText = "Lung Disease Prediction Model :"
+        des.style.paddingLeft = "30px"
+
+        console.log(des);
+        document.body.appendChild(des)
+
+        var content = document.createElement("p")
+        content.innerText = "Developed a predictive model that accurately predicts the type of lung disease based on various symptoms. Utilized machine learning algorithms including Convolutional Neural Networks (CNN), Decision Trees, and Ensemble Methods to achieve a high level of accuracy."
+        content.style.paddingLeft ="30px"
+        console.log(content);
+        
+        
+        document.body.appendChild(content)
+
+        // button 1
+        var click = document.createElement("button");
+        click.innerText = "click Me";
+        click.style.marginLeft = "30px";
+
+        console.log(click);
+        document.body.appendChild(click);
+        
+        click.onclick = function(){
+            header1.style.color = "green";
+        }
+  
+        //button 2
+
+        var clickme = document.createElement("button") 
+        clickme.innerText = "click Me";
+        clickme.style.marginLeft = "10px"
+        console.log(clickme);
+        document.body.appendChild(clickme)
+        
+        
+        clickme.onclick = function(){
+            content1.style.fontSize = "50px"
+        }
+
+        
+
+
+        
+
+
+       
+        
+
+
+        
+        
+
+
+
+        
+        
+        
+        
+
+
+
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var parent = document.createElement("div");
+        var ch1 = document.createElement("div");
+        var ch2 = document.createElement("div");
+
+        //parent:
+        parent.style.display ="flex";
+        parent.style.justifyContent = "space-between";
+        
+        parent.style.padding = "15px";
+    
+        parent.style.backgroundColor = "#";
+        parent.style.letterSpacing = "3px";
+        parent.style.fontSize = "18px";
+        
+        
+        
+        //div 1
+        var child1 = document.createElement("a");
+        ch1.appendChild(child1);
+        
+        //div 2
+        var child11 = document.createElement("a");
+        var child12 = document.createElement("a");
+        var child13 = document.createElement("a");
+        
+        child11.style.padding = "10px";
+        child12.style.padding = "10px";
+        child13.style.padding = "10px";
+        
+        child11.addEventListener('mouseover',function(){
+            child11.style.backgroundColor ="gray";
+        })
+
+        child12.addEventListener('mouseover',function(){
+            child12.style.backgroundColor ="gray";
+        })
+        child13.addEventListener('mouseover',function(){
+            child13.style.backgroundColor ="gray";
+        })
+
+        child11.addEventListener('mouseout',function(){
+            child11.style.backgroundColor ="white";
+        })
+
+        child12.addEventListener('mouseout',function(){
+            child12.style.backgroundColor ="white";
+        })
+        child13.addEventListener('mouseout',function(){
+            child13.style.backgroundColor ="white";
+        })
+
+        ch2.appendChild(child11)
+        ch2.appendChild(child12)
+        ch2.appendChild(child13)
+
+        child1.innerHTML="<b>BR</b> Architects";
+        child11.innerHTML="<b>Projects</b>";
+        child12.innerHTML="<b>About</b>";
+        child13.innerHTML="<b>Contact</b>";
+
+        document.body.appendChild(parent);
+
+        parent.appendChild(ch1);
+        parent.appendChild(ch2);
+        console.log(parent);
+
+
+        var parent1 = document.createElement("div");
+        var child2 = document.createElement("div");
+        parent1.appendChild(child2)
+        parent1.style.backgroundImage = 'url("architect.jpg")';
+        parent1.style.height = "110vh";
+        parent1.style.width = "100%";
+        parent1.style.display= "flex";
+        parent1.style.justifyContent = "center";
+        parent1.style.alignItems = "center";
+        child2.innerHTML = "BR Architects";
+        child2.style.fontSize = "44px";
+        child2.style.color = "white"
+        console.log(parent1);
+        document.body.appendChild(parent1)
+
+
+        var Project = document.createElement("h2")
+        Project.innerText = "Projects";
+        console.log(Project);
+        var ul = document.createElement("hr")
+        console.log(ul);
+        
+        document.body.appendChild(Project)
+        document.body.appendChild(ul)
+
+
+        
+        
+        
+        
+        var parent2 = document.createElement("div");
+        parent2.style.display = "grid";
+        parent2.style.gridTemplateColumns = '25vw 25vw 25vw 25vw';
+        parent2.style.rowGap = "10px";
+
+        var a = ["Summer House","Brick House","Renovated","Barn House","Renovated","Brick House","Summer House","Barn House"]
+        var b = ["house2.jpg","house3.jpg","house4.jpg","house5.jpg","house4.jpg","house3.jpg","house2.jpg","house5.jpg"]
+
+        for(i=0;i<8;i++){
+            
+            
+            var child21 = document.createElement("div");
+            var child22 = document.createElement("div");
+            
+            parent2.appendChild(child21);
+            child21.appendChild(child22);
+            console.log(parent2);
+            
+
+    
+            child21.style.backgroundImage =`url(${b[i]})`
+            child21.style.backgroundSize="cover"
+            child21.style.height="35vh";
+            child21.style.width="23.4vw";
+            child21.style.backgroundRepeat = "no-repeat";
+            child22.innerHTML = a[i];
+            child22.style.color="white";
+            child22.style.backgroundColor = "black";
+            child22.style.padding="13px";
+            child22.style.width = "145px";
+            child22.style.textAlign = "center"
+            console.log(child22);
+            document.body.appendChild(parent2);
+        }
+
+
+        var z = document.createElement("h2");
+        z.innerHTML = "About";
+        console.log(z);
+        var ul = document.createElement("hr");
+        console.log(ul);
+
+        document.body.appendChild(z);
+        document.body.appendChild(ul);
+
+
+        var p = document.createElement("p");
+        p.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+        console.log(p);
+        document.body.appendChild(p);
+
+        //  flex part:
+
+        
+        parent3 = document.createElement("div");
+        parent3.style.display ="flex";
+        // parent3.style.flexDirection = "column"
+        parent3.style.columnGap = "18px";
+
+        var x = ["team1.jpg","team3.jpg","team4.jpg","team2.jpg"];
+        var y = ["John Doe","John Doe","Mike Ross","Dan Star"];
+        var v = ["CEO & Founder","Architect","Architect","Architect"];
+        var u = ["gray","white"]
+        
+        
+        for(i=0;i<4;i++){
+            
+            
+        child31 = document.createElement("div");
+        child32 = document.createElement("img");
+        child33 = document.createElement("h3");
+        child34 = document.createElement("h3");
+        child35 = document.createElement("h4");
+        child36 = document.createElement("div");
+
+        parent3.appendChild(child31);
+        child32.src = x[i];
+        
+        parent3.style.height = "60vh"
+        child31.appendChild(child32);
+        child32.style.height = "30vh";
+        
+        
+        
+        
+        
+        
+        
+        
+        child32.style.width = "22vw";
+        child31.appendChild(child33);
+        child33.innerHTML =y[i];
+        child31.appendChild(child34);
+        child34.innerHTML = v[i];
+        child34.style.color = "gray";
+        child31.appendChild(child35);
+        child35.innerText = "Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum."
+        child35.style.width = "23vw";
+        
+        
+        child31.appendChild(child36);
+        child36.innerHTML = "Contact";
+        child36.style.width = "22vw";
+        child36.style.backgroundColor = "rgb(241, 241, 241)";
+        
+        child36.style.padding = "8px";
+        child36.style.textAlign = "center";
+        
+        
+        
+        child36.addEventListener('mouseover',function(){
+            child36.style.backgroundColor = gray;
+            
+        })
+        child36.addEventListener('mouseout',function(){
+            child36.style.backgroundColor = white;
+           
+        })
+        
+        
+        console.log(parent3);
+        document.body.appendChild(parent3)
+        
+        
+    }
+
+
+    var details = document.createElement("h2");
+    details.innerHTML = "Contact";
+
+    var next = document.createElement("h3")
+    next.innerHTML = "Lets get in touch and talk about your next project."
+
+    document.body.appendChild(details);
+    document.body.appendChild(next);
+
+    
+    var k = document.createElement("form");
+    var j = ["Name","Email","Subject","Comment"]
+    
+    
+    for(i=0;i<3;i++){
+        var g = document.createElement("input");
+        k.appendChild(g)
+
+        g.style.width = "100%";
+        g.style.height= "5vh";
+        g.style.marginTop = "13px"
+        g.setAttribute("placeholder", j[i]);
+        
+        console.log(k);
+        
+        document.body.appendChild(k);
+    }
+
+    var submit = document.createElement("h4")
+    submit.innerHTML = "Send Message";
+    submit.style.padding = "10px";
+    submit.style.background = "black";
+    submit.style.color = "white"
+    submit.style.width = "100px";
+    document.body.appendChild(submit)
+
+
+
+
+    var w = document.createElement("img");
+    w.src = "map.jpg";
+    
+    document.body.appendChild(w);
+
+        
+        
+        
+        
+    
+    
+    
+    
+
+        
+
+
+
+        
+
+
+
+        
+        
+        
+        
+
+
+
+        
+
+    
+        
+            
+            
+    
+
+
+
+
+        
+        
+
+        
+        
+        
+        
+
+
+    
+
+
+        
+        
+        
+
+
+
+
+        
+        
+        
+    </script>
+</body>
+</html>

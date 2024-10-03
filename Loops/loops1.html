@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <script>
+
+
+var count=1;
+for(var i=1;i<=5;i++){
+    count=count*i
+}
+console.log(count)
+
+
+//revers a number;
+
+var a = 654321
+var b =String(a)
+
+var count = "";
+
+for(i=b.length-1;i>=0;i--){
+    
+    count=count+b[i]
+}
+console.log(count)
+
+
+// count
+var x=123456
+
+var y=String(x)
+console.log(y.length)
+
+// count
+var x=123456;
+var y=String(x);
+var count=0;
+for(var i=1;i<=y.length;i++){
+    
+    count = count+1;
+}
+console.log(count)
+
+// it is a palindrom
+var a = 121;
+var b =String(a);
+var count = "";
+for(i=0;i<b.length;i++){
+    count=b[i]+count
+    console.log(count)
+}
+if(b===count){
+    console.log("it is palindrome")
+}
+else{
+    console.log("it not a palindrome")
+}
+
+// ex =input 1234 output 1*2*3*4=24;
+
+var a=1234;
+var b=String(a);
+var count=1;
+for(i=1;i<=b.length;i++){
+    count=count*i;
+console.log(count)
+}
+
+
+
+    </script>
+    
+</body>
+</html>

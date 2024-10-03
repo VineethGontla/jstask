@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+        // print odd or even using switch
+        n=-2;
+        if(n>0){
+            switch(n%2){
+                
+                case 0:
+                    console.log("even")
+                    break;
+                case 1:
+                    console.log("odd")
+                    break;
+                
+            }
+        }
+        else{
+            console.log("enter positive numbers only")
+        }
+        
+        
+        
+        n=11;
+        
+        if(n<0){
+            n=-(n)
+        }
+        
+            switch(n%2){
+                
+                case 0:
+                    console.log(n + "is a even")
+                    break;
+                case 1:
+                    console.log(n + "is a odd")
+                    break;
+                
+            }
+
+            // 10 to 0
+            
+            var num1 = +prompt("Enter the numbers");
+            
+            for(i=num1;!(i<=0);i--){
+                console.log(i)
+            }
+
+            // 0 to 10;
+            
+            var num = +prompt("Enter the numbers");
+            
+            for(i=0;!(i==num+1);i++){
+                
+                console.log(i)
+            }
+
+            // -1 to -10
+            
+            var sum =+prompt("Enter the numbers")
+            if(sum>0){
+                console.log("enter negative nuber")
+            }
+            for(i=-1;i>=sum;i--){
+                console.log(i)
+            }
+
+            // -10 to -1:
+            
+            var num = +prompt("enter the numbers");
+            for(i=num;i<=-1;i++){
+                console.log(i)
+            }
+
+            // prime or not :
+            
+            var num = 9;
+            if(num>1){
+            var count=0;
+            for(i=2;i<num;i++)
+                {
+                if(num%i==0){
+                    count=count+1;
+                    break;
+                    
+                }
+            }
+            if(count==1){
+                console.log("not prime")
+            }
+            else{
+                console.log("prime")
+            }
+
+            }
+            else{
+                console.log("enter grater than 1 values")
+            }
+
+
+            // sum of prime numbers
+            
+            num = "34567";
+            sum = 0;
+            
+            for(n of num){
+                if(n>1){
+                    count=0;
+                    for(i=2;i<n;i++){
+                        if(n%i==0){
+                            count=count+1;
+                            break;
+                        }
+                    }
+                    
+            if(count==0){
+                sum = sum +Number(n) 
+                
+            }  
+            
+                }
+            }
+            console.log(sum)
+
+
+            // print sum of odd numbers 98765 = 21,odd numbers 9+7+5
+            
+            sum = 98765;
+            str = String(sum);
+            count = 0;
+            
+            for(i=0;i<str.length;i++){
+                if(Number(str[i])%2==1){
+                    count = count + Number(str[i]) ;
+                    
+                }
+            }
+            console.log(count)
+
+            // print sum of even numbers 987654 = 18,odd numbers 8+6+4
+            
+            num = 987654;
+            str =String(num);
+            count = 0;
+            
+            for(i=0;i<str.length;i++){
+                if(Number(str[i])%2==0){
+                    count = count + Number(str[i]);
+                }
+            }
+            console.log(count)
+
+            // write a program to print largest sum b/w odd sum and even sum;
+            
+            // input=1658 => "even sum is bigger"
+            num = 123456789;
+            str = String(num);
+            count1 = 0;
+            count2 = 0;
+            
+            for(i=0;i<str.length;i++){
+                if(Number(str[i])%2==0){
+                    count1 = count1 + Number(str[i])
+                }
+                else{
+                    count2 = count2 + Number(str[i])
+                }
+            }
+            if(count1>count2){
+                console.log("count1 is bigger")
+            }
+            else{
+                console.log("coun2 is bigger")
+            }
+
+
+            let number = 29; // The number we want to check
+        let isPrime = true; // Assume it's prime initially
+        
+        // Check for numbers less than or equal to 1
+        if (number <= 1) {
+            isPrime = false; // Numbers 1 and below are not prime
+        } else {
+            // Start a for loop from 2 to number - 1
+            for (let i = 2; i < number; i++) {
+                // Check if the number is divisible by i
+                if (number % i === 0) {
+                    // If divisible, it's not prime
+                    isPrime = false;
+                    break; // Stop further checks as we know it's not prime
+                }
+            }
+        }
+        
+        // After the loop, we check the result
+        if (isPrime) {
+            console.log(number + " is a prime number.");
+        } else {
+            console.log(number + " is not a prime number.");
+        }
+                
+            
+            
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
